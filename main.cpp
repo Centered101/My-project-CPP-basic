@@ -1,4 +1,4 @@
-﻿// My project C++ basic.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// My project C++ basic.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -21,10 +21,16 @@ int main()
     number1 = 101;
     number2 = 201;
 
+    cout << endl;
+
     cout << "แทนค่า number1 = 101, number2 = 201 ใหม่\n";
+
+    cout << endl;
 
     cout << "number1 = " << number1 << endl;
     cout << "number2 = " << number2 << endl;
+
+    cout << endl;
 
     cout << "number1 + number2 = " << number1 + number2 << endl; // การบวก
     cout << "number1 - number2 = " << number1 - number2 << endl; // การลบ
@@ -59,14 +65,14 @@ int main()
     cout << "b postfix = " << b-- << endl;
     cout << "b current = " << b << endl;
 
-    cout << "\n";
-
     cout << "--------------------\n";
 
     int x = 5, y = 101;
 
     cout << "X = " << x << endl;
     cout << "Y = " << y << endl;
+
+    cout << endl;
 
     x += y;
     cout << "X += Y = " << x << endl;
@@ -89,7 +95,7 @@ int main()
     * - ขึ้นต้นด้วยตัวอักษร A-Z หรือ a-z หรือ _ เครื่องหมายขีดเส้นใต้เท่านั้น
     * - อักษณตัวแรกห้ามเป็นตัวเลข
     * - ต้วพิมพ์เล็ก-พิมฑืใหญ่มีความหมายต่างกัน (Case Sensitive)
-    * - ห้ามใช้อักขระพิเศษมาประกอบเป็นชื่อตัวแปร เช่น {} , % ^ และช่องว่าง เป็นต้น 
+    * - ห้ามใช้อักขระพิเศษมาประกอบเป็นชื่อตัวแปร เช่น {} , % ^ และช่องว่าง เป็นต้น
     * - ไม่ซ้ำกับคำสงวน(Keywords)ในภาษา C++ */
 
     // ใส่ const ข้างหน้าจะเป็นตัวแปรค่าคงที่และ นิยมตั่งชื่ตัวแปรพิมพ์ใหญ่
@@ -109,12 +115,52 @@ int main()
     cout << "Grade    = " << grade << endl;
     cout << "Pass     = " << pass << endl;
 
+    cout << "--------------------\n";
+
+    cout << "number1 = " << number1 << endl;
+    cout << "number2 = " << number2 << endl;
+
+    cout << endl;
+
+    bool result1 = number1 == number2;
+    bool result2 = number1 != number2;
+    bool result3 = number1 > number2;
+    bool result4 = number1 < number2;
+    bool result5 = number1 >= number2;
+    bool result6 = number1 <= number2;
+
+    cout << "== Result = " << result1 << endl;
+    cout << "!= Result = " << result2 << endl;
+    cout << "> Result = " << result3 << endl;
+    cout << "< Result = " << result4 << endl;
+    cout << ">= Result = " << result5 << endl;
+    cout << "<= Result = " << result6 << endl;
+
+    cout << "--------------------\n";
+
+    // input
+    int inputnumber1, inputnumber2;
+
+    cout << "Input your number 1 = " << endl;
+    cout << "Input your number 2 = " << endl;
+
+    cin >> inputnumber1;
+    cin >> inputnumber2;
+
+    // process
+
+
+    // output
+    cout << "Number 1 = " << inputnumber1 << endl;
+    cout << "Number 2 = " << inputnumber2 << endl;
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages
